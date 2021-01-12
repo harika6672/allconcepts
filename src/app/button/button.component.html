@@ -1,0 +1,27 @@
+
+<ng-content>
+
+</ng-content>
+
+
+<!--ng-template:These template elements only work in the presence of structural directives. (*ngIf, *ngFor, [ngSwitch])
+//Example:-->
+<!--<div *ngIf="showStatus" class="check">
+//Hello Siri!!!
+</div>-->
+<!--<ng-template [ngIf]="showStatus" class="check">
+  Hello Siri!!!
+</ng-template>
+ng-container:It is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM.
+  <div *ngFor="let item of items">
+    <div *ngIf="item.id">{{item.name}}</div>
+  </div>
+  The reason why many of us write this code is the inability to use multiple structural directives on a single host element in Angular.
+  Now the above code works fine but it introduces several extra empty <div>
+  in the DOM if item.id is a falsy value which might not be required.
+  Use of ng-container Example
+  <ng-container *ngFor="let item of items">
+    <div *ngIf="item.id">{{item.name}}</div>
+  </ng-container>-->
+<!--REFERENCE LINK
+https://www.freecodecamp.org/news/everything-you-need-to-know-about-ng-template-ng-content-ng-container-and-ngtemplateoutlet-4b7b51223691/-->

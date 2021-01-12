@@ -1,0 +1,12 @@
+<div class="child">
+  <h4>Child Component..It is Inside Parent Component</h4>
+  <form>
+    <input type="text" appCommon name="input1" [(ngModel)]="input1" />
+    <!--<app-button #myContent (click)="btnHandler()">Get Input</app-button>-->
+    <!-- <button type="button" (click)="btnHandler()">Get Input</button> -->
+    <app-button>
+      <button #myContent (click)="btnHandler()">Projecting Button From Child To Button Component</button>
+    </app-button>
+  </form>
+  <p>{{name}} from Parent to child</p>
+</div>
